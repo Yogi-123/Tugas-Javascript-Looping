@@ -18,11 +18,17 @@ for ( let i = 0 ; i <= 20 ; i++) {
 
 // tampilkan konfirmasi pop up
 let i = confirm("apakah anda mau mengulang ?")
-while (i == "ok") {
-    console.log(i)
-    i++
-} while (i == "cancel") {
-    console.log("perulangan sebanyak" + i)
+do {
+    confirm("apakah anda mau mengulang ?")
+} while (i != "Oke") {
+    confirm("apakah anda mau mengulang ?")
 }
 
+
 // buat program kuis
+let i = prompt("sebutkan kepanjangan dari nama IB !")
+do {
+    i = prompt("isi")
+} while (i != "Impact Byte") {
+alert("sukses")
+}
